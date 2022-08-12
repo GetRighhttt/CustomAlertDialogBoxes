@@ -37,6 +37,15 @@ class MainActivity : AppCompatActivity() {
         buttonThree = findViewById(R.id.button3)
 
         /*
+        Putting the method call in the onCreate() allows us to call for permissions as soon
+        as the activity is started.
+
+        I also added the method call into the positive button of the alert dialogs so we
+        could see an example of that as well.
+         */
+        requestPermissions()
+
+        /*
         Here is how we create a custom dialog.
 
         It's pretty self explanatory with written code and the
@@ -74,7 +83,10 @@ class MainActivity : AppCompatActivity() {
                 }.show() // showing the entire snackbar
             }
             .create()
-        firstAlertDialog.show()
+
+        buttonOne.setOnClickListener {
+            firstAlertDialog.show()
+        }
         /*
         Once we have created our first ALertDialog, we need to set the
         OnClickListener for the demo and show that dialog when the button is clicked.
@@ -93,7 +105,6 @@ class MainActivity : AppCompatActivity() {
         )
         val secondDialog = AlertDialog.Builder(this)
             .setTitle("Basketball Players")
-            .setMessage("Choose your favorite player: ")
             // Here we set the singleChoiceItems, which is the only difference.
             .setSingleChoiceItems(singleChoiceOptions, 0) { _, i ->
                 Snackbar.make(
@@ -108,6 +119,7 @@ class MainActivity : AppCompatActivity() {
                     "You accepted the Multi Choice Dialog.",
                     Snackbar.LENGTH_SHORT
                 ).show()
+                requestPermissions()
             }
             .setNegativeButton("Decline") { _, _ ->
                 // Here is how we create an UNDO button in Android with a Snackbar.
@@ -123,12 +135,6 @@ class MainActivity : AppCompatActivity() {
                     )
                     snackbar.show() // we always have to show the snackbar undo button.
                 }.show() // showing the entire snackbar
-            }
-            /*
-                Here is how we can call permissions using the neutral button.
-                 */
-            .setNeutralButton("Permissions") {_, _ ->
-                requestPermissions()
             }
             .create()
 
@@ -148,7 +154,6 @@ class MainActivity : AppCompatActivity() {
          */
         val thirdDialog = AlertDialog.Builder(this)
             .setTitle("Basketball MultiChoice")
-            .setMessage("Choose your favorite player: ")
             // we use a Boolean array to determine which items are checked
             .setMultiChoiceItems(
                 singleChoiceOptions, // all items are unchecked.
@@ -171,9 +176,10 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("Accept") { _, _ ->
                 Snackbar.make( // be sure to pass in the layout that you use.
                     constraintLayout,
-                    "You accepted the Single Choice Dialog.",
+                    "You accepted the Multi Choice Dialog.",
                     Snackbar.LENGTH_SHORT
                 ).show()
+                requestPermissions()
             }
             .setNegativeButton("Decline") { _, _ ->
                 // Here is how we create an UNDO button in Android with a Snackbar.
@@ -189,12 +195,6 @@ class MainActivity : AppCompatActivity() {
                     )
                     snackbar.show() // we always have to show the snackbar undo button.
                 }.show() // showing the entire snackbar
-            }
-            /*
-               Here is how we can call permissions using the neutral button.
-                */
-            .setNeutralButton("Permissions") {_, _ ->
-                requestPermissions()
             }
             .create()
 
