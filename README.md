@@ -5,9 +5,10 @@ I also demo'd how to ask for permissions while using these dialog boxes.
 
 
 ### Basic Dialog with UNDO button: 
-![2022-08-11 (4)](https://user-images.githubusercontent.com/105057858/184273936-1ffeeae2-3087-4a0d-8166-adab813c5af4.png)
-![2022-08-11 (5)](https://user-images.githubusercontent.com/105057858/184273942-c2d5652c-2fff-46f7-839a-47bfc3686988.png)
-![2022-08-11 (6)](https://user-images.githubusercontent.com/105057858/184274000-f2be0b05-c5e3-458c-86e0-b770907f6969.png)
+![2022-08-12 (2)](https://user-images.githubusercontent.com/105057858/184395543-244cb871-821c-4008-965c-8265c8f5566b.png)
+![2022-08-12 (3)](https://user-images.githubusercontent.com/105057858/184395544-7f8e2fd0-c6b6-471e-ada0-7c75ccc45809.png)
+![2022-08-12 (1)](https://user-images.githubusercontent.com/105057858/184395547-f747d0db-620e-4871-a857-861dcb5e3e00.png)
+
 
 <hr>
 
