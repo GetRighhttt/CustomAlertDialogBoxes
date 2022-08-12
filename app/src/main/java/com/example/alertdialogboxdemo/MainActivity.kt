@@ -79,9 +79,6 @@ class MainActivity : AppCompatActivity() {
         Once we have created our first ALertDialog, we need to set the
         OnClickListener for the demo and show that dialog when the button is clicked.
          */
-        //buttonOne.setOnClickListener {
-//            firstAlertDialog.show() // shows the first alert dialog
-//        }
 
         //-----------------------------------------------------------------------------------
 
@@ -127,7 +124,7 @@ class MainActivity : AppCompatActivity() {
                     snackbar.show() // we always have to show the snackbar undo button.
                 }.show() // showing the entire snackbar
             }
-                /*
+            /*
                 Here is how we can call permissions using the neutral button.
                  */
             .setNeutralButton("Permissions") {_, _ ->
