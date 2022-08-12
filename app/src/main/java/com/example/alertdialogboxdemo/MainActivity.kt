@@ -1,14 +1,12 @@
 package com.example.alertdialogboxdemo
 
 import android.Manifest
-import android.app.ProgressDialog.show
+
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
-import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
@@ -88,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             firstAlertDialog.show()
         }
         /*
-        Once we have created our first ALertDialog, we need to set the
+        Once we have created our first AlertDialog, we need to set the
         OnClickListener for the demo and show that dialog when the button is clicked.
          */
 
