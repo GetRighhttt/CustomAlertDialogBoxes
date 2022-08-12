@@ -1,6 +1,7 @@
 # CustomAlertDialogBoxes
 A repo demoing how easy it is to display your own custom dialog boxes in Android.<br>
-We also show how to display an UNDO button using Snackbars with those Dialogs.
+We also show how to display an UNDO button using Snackbars with those Dialogs.<br>
+I also demo'd how to ask for permissions while using these dialog boxes.
 
 
 ### Basic Dialog with UNDO button: 
