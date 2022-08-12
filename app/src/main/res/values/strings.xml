@@ -3,4 +3,6 @@
     <string name="first_dialog">First Dialog</string>
     <string name="second_dialog">Second Dialog</string>
     <string name="third_dialog">Third Dialog</string>
+    <string name="alert_dialog_box_demo">Alert Dialog Box Demo!</string>
+    <string name="click_on_a_button_to_see_different_custom_dialog_boxes">Click on a button to see different custom dialog boxes:</string>
 </resources>
